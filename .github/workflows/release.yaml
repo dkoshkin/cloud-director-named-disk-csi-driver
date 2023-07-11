@@ -2,11 +2,11 @@ name: Release
 on:
   push:
     tags:
-      - "*-d2iq.*"
+      - "*-dkoshkin.*"
 
 # Because variables are not exported, they are not visible by child processes, e.g. make
 env:
-  registry: ghcr.io/mesosphere
+  registry: ghcr.io/dkoshkin
   registry_username: ${{ github.actor }}
   registry_password: ${{ secrets.GITHUB_TOKEN }}
   version: ${{ github.ref_name }}
